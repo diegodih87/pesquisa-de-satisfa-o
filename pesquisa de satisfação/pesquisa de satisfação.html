@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação </title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff9a01;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de Satisfação</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="opcao1">
+                    <input type="radio" name="opcao" id="opcao1" value="otimo"> Ótimo
+                </label>
+            </div>
+            <div>
+                <label for="opcao2">
+                    <input type="radio" name="opcao" id="opcao2" value="bom"> Bom
+                </label>
+            </div>
+            <div>
+                <label for="opcao3">
+                    <input type="radio" name="opcao" id="opcao3" value="regular"> Regular
+                </label>
+            </div>
+            <div>
+                <label for="opcao4">
+                    <input type="radio" name="opcao" id="opcao4" value="ruim"> Ruim
+                </label>
+            </div>
+            <div>
+                <label for="comentario">Comentários (opcional):</label>
+                <textarea name="comentario" id="comentario" rows="4" cols="50"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
