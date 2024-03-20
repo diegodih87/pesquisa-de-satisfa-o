@@ -1,0 +1,8 @@
+CREATE DATABASE pesquisa_satisfacao;
+USE pesquisa_satisfacao;
+
+CREATE TABLE resultados_pesquisa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    opcao VARCHAR(10) NOT NULL,
+    comentario TEXT
+);
